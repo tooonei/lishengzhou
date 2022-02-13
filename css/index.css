@@ -1,0 +1,267 @@
+@charset "utf-8";
+body{ background: rgba(0,0,0,0.7)}
+
+.loading-item{ overflow: hidden; width: 200px; height: 200px; float: left; position: relative}
+
+/*loading-1*/
+.headbox{ overflow: hidden; width: 100px; height: 30px; position: relative; margin: 50px auto;}
+.headbox .head{ overflow: hidden; width: 30px; height: 30px; border-radius: 50%; position: relative; z-index: 2; animation: head 2s linear infinite}
+.headbox .head .headbg,
+.headbox .head .head-block{ overflow: hidden; width: 100%; height: 100%; background: yellow; transform: translateX(-50%)}
+.headbox .head .head-block{ position: absolute; margin: 0; left: 50%;}
+.headbox .head .block1{ top: -50%; transform: rotate(-20deg);transform-origin:left bottom; animation: topm 0.6s linear infinite }
+.headbox .head .block2{ top: 50%; transform: rotate(20deg);transform-origin:left top; animation: btmm .6s linear  infinite}
+.headbox .head .eyes{ display: block; width: 3px; height: 3px; background-color: #000; border-radius: 50%; position: absolute; left: 50%; top: 20%; z-index: 2}
+.headbox .foods{ overflow: hidden; width: 100px; position: absolute; left: 30px; top: 0; height: 30px; line-height: 25px;}
+.headbox .foods span{ display: inline-block; width: 5px; height: 5px; background-color: #fff; border-radius: 5px; margin-left: 15px;}
+.headbox .foods .span1{ animation: span1 2s linear infinite}
+.headbox .foods .span2{ animation: span2 2s linear infinite}
+.headbox .foods .span3{ animation: span3 2s linear infinite}
+
+@keyframes topm {
+    0%{transform: rotate(-20deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(-20deg)}
+}
+@keyframes btmm {
+    0%{transform: rotate(20deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(20deg)}
+}
+@keyframes head {
+    0%{ left: 0}
+    /*50%{transform: rotateX(0deg)}*/
+    100%{ left: 100%;}
+}
+@keyframes span1 {
+    0%{ opacity: 1}
+    25%{ opacity: 1}
+    26%{ opacity: 0}
+    100%{ opacity: 0}
+}
+@keyframes span2 {
+    0%{ opacity: 1}
+    50%{ opacity: 1}
+    51%{ opacity: 0}
+    100%{ opacity: 0}
+}
+@keyframes span3 {
+    0%{ opacity: 1}
+    75%{ opacity: 1}
+    76%{ opacity: 0}
+    100%{ opacity: 0}
+}
+
+
+/*loading-2*/
+.gearbox{ overflow: hidden; width: 100px; height: 100px; margin: 50px auto; position: relative}
+.gearbox .gear{  width: 30px; height:30px;position: absolute; left: 50%; top: 50%; border: 8px solid #fff; box-sizing: border-box; border-radius: 50%;}
+.gearbox .gear1{  margin-left: -36px; animation: gear1 5s linear infinite}
+.gearbox .gear2{ margin-left: -2px; margin-top: -7px; animation: gear2 5s linear infinite}
+.gearbox .gear i{ display: block; width: 10px; height: 6px; background-color: #fff; position: absolute; left: 50%; top: 50%; margin-top: -3px;}
+.gearbox .gear i:nth-child(1){ transform: rotate(-90deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(2){ transform: rotate(-45deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(3){ transform: rotate(-0deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(4){ transform: rotate(45deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(5){ transform: rotate(90deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(6){ transform: rotate(135deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(7){ transform: rotate(180deg) translateX(9px); transform-origin: left center}
+.gearbox .gear i:nth-child(8){ transform: rotate(225deg) translateX(9px); transform-origin: left center}
+
+@keyframes gear1 {
+    from{ transform: rotate(0)}
+    to{ transform: rotate(360deg)}
+}
+@keyframes gear2 {
+    from{ transform: rotate(360deg)}
+    to{ transform: rotate(0)}
+}
+
+/* loading-3 */
+.cirbox{ overflow: hidden; width: 100px; height: 100px; position: relative; margin: 50px auto}
+.cirbox .cirItem{ width: 50px; height: 100px; float: left; overflow: hidden; position: relative}
+.cirbox .cirItem .cir{ width: 88px; height: 88px; border: 6px solid transparent; transform: rotate(-135deg); position: absolute; top: 0; border-radius: 50%;}
+.cirbox .left .cir{ left: 0; border-bottom-color:#fff; border-left-color:#fff; animation: leftcir 5s linear infinite}
+.cirbox .right .cir{ right: 0; border-top-color:#fff; border-right-color:#fff; animation: rightcir 5s linear infinite }
+
+@keyframes rightcir {
+    0%{ transform: rotate(-135deg)}
+    50%{transform: rotate(45deg)}
+    100%{transform: rotate(45deg)}
+}
+@keyframes leftcir {
+    0%{ transform: rotate(-135deg)}
+    50%{transform: rotate(-135deg)}
+    100%{transform: rotate(45deg)}
+}
+
+/* loading-4 */
+
+.linebox{ overflow: hidden; width: 200px; height: 10px; margin: 95px auto}
+.linebox .line{ width: 100%; height: 2px; margin: 4px 0; border-radius: 50%; background-color: rgba(255,255,255,0.7); position: relative;}
+.linebox .heightline{ width: 6px; height: 6px; border-radius: 50%; position: absolute; left: 0; top: -2px; background: radial-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); animation: line 2s linear infinite}
+
+@keyframes line {
+    0%{ transform: translateX(0) scale(1)}
+    50%{ transform: translateX(100px) scale(1.5)}
+    100%{ transform: translateX(200px) scale(1)}
+}
+
+
+/* loading-5 */
+.dotbox{ overflow: hidden; width: 100px; height: 10px; padding: 0 10px; box-sizing: border-box; line-height: 6px; text-align-last: justify; margin: 95px auto; position: relative}
+.dotbox .dot{ display: inline-block; animation: dot .7s alternate linear infinite; width: 6px; height: 6px;  position: relative; background: rgba(255,255,255,0.5); border-radius: 50%;}
+.dotbox .dot1{animation-delay: 0s}
+.dotbox .dot2{animation-delay: .1s}
+.dotbox .dot3{animation-delay: .2s}
+.dotbox .dot4{animation-delay: 0.3s}
+.dotbox .dot5{animation-delay: 0.4s}
+.dotbox .dot6{animation-delay: 0.5s}
+
+@keyframes dot {
+    from{ transform: scale(1);background: rgba(255,255,255,0.5)}
+    to{ transform: scale(1.5);background: rgba(255,255,255,1)}
+}
+
+/* loading-6 */
+.verticalbox{ overflow: hidden; width: 50px; height: 50px; position: relative; margin: 75px auto}
+.verticalbox .vertical{ width: 5px; height: 50px; float: left; margin: 0 2px; background: #fff; border-radius: 5px; animation: vertical 1s alternate linear infinite;}
+.verticalbox .vertical:nth-child(1){ animation-delay: 0s}
+.verticalbox .vertical:nth-child(2){ animation-delay: 0.2s}
+.verticalbox .vertical:nth-child(3){ animation-delay: 0.4s}
+.verticalbox .vertical:nth-child(4){ animation-delay: 0.6s}
+.verticalbox .vertical:nth-child(5){ animation-delay: 0.8s}
+
+@keyframes vertical {
+    from{ transform: scaleY(1)}
+    to{ transform: scaleY(0.2)}
+}
+
+/* loading-7 */
+.cir-three{ overflow: hidden; width: 150px; height: 150px; position: relative;}
+.cir-three .cir-1{ animation: cir1 3s linear infinite; width: 90%;height:90%; border: 1px solid #00a4db; border-radius: 50%; position: absolute; left: 5%; top: 5%;}
+.cir-three .cir-1:before{ border-radius: 50%; display: block; content: ' '; width: 100%;height:100%; box-sizing: border-box; border: 3px solid transparent; border-left: 3px solid #00a4db; position: absolute; left: 0; top: 0}
+.cir-three .cir-2{ animation: cir2 4s linear infinite; width: 80%;height:80%; border: 1px solid #ff8000; border-radius: 50%; position: absolute; left: 10%; top:10%;}
+.cir-three .cir-2:before{ border-radius: 50%; display: block; content: ' '; width: 100%;height:100%; box-sizing: border-box; border: 3px solid transparent; border-right: 3px solid #ff8000; position: absolute; left: 0; top: 0}
+.cir-three .cir-3{ animation: cir3 5s linear infinite; width: 70%;height:70%; border: 1px solid #ed1e83; border-radius: 50%; position: absolute; left: 15%; top: 15%;}
+.cir-three .cir-3:before{ border-radius: 50%; display: block; content: ' '; width: 100%;height:100%; box-sizing: border-box; border: 3px solid transparent; border-top: 3px solid #ed1e83; position: absolute; left: 0; top: 0}
+
+@keyframes cir1 {
+    from{ transform: rotate(0)}
+    to{ transform: rotate(360deg)}
+}
+@keyframes cir2 {
+    from{ transform: rotate(360deg)}
+    to{ transform: rotate(0)}
+}
+@keyframes cir3 {
+    from{ transform: rotate(0deg)}
+    to{ transform: rotate(360deg)}
+}
+
+/* loading-8 */
+.blobBox{ overflow: hidden; width: 200px; height: 200px; position: relative}
+.blobBox .blobCome{ width: 20px; height: 40px; z-index: 2; background: linear-gradient(to right, #ddd, #fff, #eee); margin: 0 auto; position: absolute; left: 50%; top: 0; transform: translateX(-50%)}
+.blobBox .blobCome:after{ display: block; content: ' '; width: 100%; height: 3px; background: linear-gradient(to right,#999, #f0f0f0, #999); position: absolute; left: 0; bottom: 0}
+.blobBox .blob{ animation: blod 5s linear infinite; width: 20px; height: 20px; border-radius: 50%; background-color: #0cbadf; position: absolute; left: 50%; margin-left: -10px; top: 20px;}
+.blobBox .blob:before{ position: absolute; left: 0; top: -26px; display: block; border-radius: 5px; content: ' '; width: 0; height: 0; border-style: solid; border-color: transparent; border-width: 10px 10px 24px 10px; border-bottom-color: #0cbadf; }
+.blobBox .blob-small{ width: 10px; height: 10px; border-radius: 50%; background-color: #0cbadf; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0}
+.blobBox .blob-small:before{ position: absolute; left: 0; top: -12px; display: block; border-radius: 5px; content: ' '; width: 0; height: 0; border-style: solid; border-color: transparent; border-width: 5px 5px 12px 5px; border-bottom-color: #0cbadf; }
+.blobBox .blobs-1{ transform: rotate(-135deg) translateX(5px) translateY(5px); animation: blobs-1 5s linear infinite}
+.blobBox .blobs-2{ transform: rotate(135deg) translateX(5px) translateY(15px); animation: blobs-2 5s linear infinite}
+
+@keyframes blod {
+    0%{ transform: scale(0); opacity: 0.5; top:20px}
+    10%{ transform: scale(1); opacity: 1; top:30px}
+    30%{ transform: scaleY(1.5); opacity: 1; top:40px}
+    40%{ transform: scale(1); opacity: 1; top: 100%;}
+    41%{ transform: scale(0); opacity: 0; top: 100%;}
+    100%{ transform: scale(0); opacity: 0; top: 20px;}
+}
+@keyframes blobs-2 {
+    0%{ opacity:0;transform: rotate(135deg) translateX(5px) translateY(15px);}
+    39%{ opacity:0;transform: rotate(135deg) translateX(5px) translateY(15px);}
+    40%{ opacity:1;transform: rotate(135deg) translateX(5px) translateY(15px);}
+    60%{ opacity:0;transform: rotate(105deg) translateX(15px) translateY(85px);}
+    61%{ opacity:0;transform: rotate(135deg) translateX(15px) translateY(15px);}
+    100%{ opacity:0;transform: rotate(135deg) translateX(5px) translateY(15px);}
+}
+@keyframes blobs-1 {
+    0%{ opacity:0;transform: rotate(-135deg) translateX(5px) translateY(15px);}
+    39%{ opacity:0;transform: rotate(-135deg) translateX(5px) translateY(15px);}
+    40%{ opacity:1;transform: rotate(-135deg) translateX(5px) translateY(15px);}
+    60%{ opacity:0;transform: rotate(-105deg) translateX(-15px) translateY(85px);}
+    61%{ opacity:0;transform: rotate(-135deg) translateX(15px) translateY(15px);}
+    100%{ opacity:0;transform: rotate(-135deg) translateX(5px) translateY(15px);}
+}
+
+/* loading-9 */
+.boxShadow{ overflow: hidden; width: 200px; height: 200px; position: relative;}
+.boxShadow::after{ content: ''; display: block; width: 40px; height: 40px; position: absolute; left: -40px; top: -40px;
+    box-shadow: 40px 40px #fff, 120px 40px #fff, 200px 40px #fff,
+                40px 80px #fff, 120px 80px #fff, 200px 80px #fff,
+                40px 120px #fff, 120px 120px #fff, 200px 120px #fff,
+                40px 160px #fff, 120px 160px #fff, 200px 160px #fff,
+                40px 200px #fff, 120px 200px #fff, 200px 200px #fff;
+    animation: move 3s linear infinite;
+}
+@keyframes move {
+    25%{ transform: translate(40px);
+        box-shadow: 40px 40px, 120px 40px, 200px 40px,
+                    40px 80px, 120px 80px, 200px 80px,
+                    40px 120px, 120px 120px, 200px 120px,
+                    40px 160px, 120px 160px, 200px 160px,
+                    40px 200px, 120px 200px, 200px 200px;}
+    50%{ transform: translate(0px);  border-radius: 0; color: #0cbadf;
+        box-shadow: 40px 40px, 120px 40px, 200px 40px,
+                    80px 80px, 160px 80px, 240px 80px,
+                    40px 120px, 120px 120px, 200px 120px,
+                    80px 160px, 160px 160px, 240px 160px,
+                    40px 200px, 120px 200px, 200px 200px;}
+    75%{ transform: translate(0); border-radius: 50%; color: #ff8000;
+        box-shadow: 40px 40px, 120px 40px, 200px 40px,
+                    80px 80px, 160px 80px, 240px 80px,
+                    40px 120px, 120px 120px, 200px 120px,
+                    80px 160px, 160px 160px, 240px 160px,
+                    40px 200px, 120px 200px, 200px 200px;}
+    100%{ transform: translate(0px); border-radius: 0; color: #fff;
+        box-shadow: 40px 40px, 120px 40px, 200px 40px,
+                    40px 80px, 120px 80px, 200px 80px,
+                    40px 120px, 120px 120px, 200px 120px,
+                    40px 160px, 120px 160px, 200px 160px,
+                    40px 200px, 120px 200px, 200px 200px;}
+}
+
+/* loading-10 */
+.waterBox{ overflow: hidden; width: 100px;height: 100px; border-radius: 50%; border: 1px solid #fff; margin: 50px auto; position: relative; animation: waterMove linear infinite;}
+.waterBox>div{ width: 200px; height: 200px; position: absolute; left: 50%; top: 50%; background: #00CD00;}
+.waterBox .water-1{opacity: 0.6; margin-left: -50%; z-index: 0; border-radius: 30%; animation: inherit; animation-duration: 11s}
+.waterBox .water-2{opacity: 0.4; margin-left: -60%; z-index: 1; border-radius: 33%; animation: inherit; animation-duration: 7s}
+.waterBox .water-3{opacity: 0.2; margin-left: -40%; z-index: 2; border-radius: 36%; animation: inherit; animation-duration: 5s}
+
+@keyframes waterMove {
+  100%{transform: rotate(360deg)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
