@@ -1,0 +1,37 @@
+body{
+    background-color: #111;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(114, 93, 189);
+    border:2px ;
+	border-radius:25px;
+    
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(139, 73, 73);
+}
+h1{
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(247, 247, 247);
+    float: left;
+    width: 90x;
+}
+img{
+    float: right;
+    height: 550px;
+}
