@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<title>烟舟博客——轻快自如</title>
+	<link rel="icon" href="favicon.ico" type="img/icon" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="javascript/index.js">
+
+	</script>
+</head>
+
+<body>
+	<div class="nav_daohan">
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<script type="text/javascript" src="javascript/nav.js"></script>
+		<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+			aria-controls="offcanvasExample" style="float: right;">
+			<span style="color: red;">🟰</span>
+			<p style="font-size: 5px; color: rgb(233, 245, 205);">侧栏</p>
+		</a>
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(246, 246, 245);">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					<img src="imges/profile.jpg" / style="width: 40px; height: 40px;">
+					欢迎来到我的博客！
+					<br />
+					<font style="border: 5px solid yellow; color: blueviolet;">失败只是暂时停止成功，假如我不能，我就一定要；假如我要，我就一定能！</font>
+					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=520588146&auto=1&height=66"></iframe>
+				</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<hr />
+				<div>
+					<div class="nav_daohan">
+						<p>站内链接</p>
+						<ul>
+							<li>
+								<a href="../index.html">首页🏚️</a>
+								<br />
+								<a href="../contact.html">About🪟</a>
+								<br />
+								<a href="../writeblog.html">写博客🛹</a>
+								<br />
+								<a href="https://blog.lishengzhou.ga">导航🌐</a>
+							</li>
+						</ul>
+					</div>
+					<hr />
+					<div class="nav_daohan">
+						<p>友情链接</p>
+						<ul>
+							<li>
+								<a href="https://lishengzhou.ga">lishengzhou<img src="favicon.ico" alt=""
+										style="width: 16px;height: 16px;" /></a>
+								<br />
+								<a href="https://www.runoob.com/">菜鸟教程<img
+										src="https://static.runoob.com/images/favicon.ico" alt=""
+										style="width: 16px;height: 16px;" /></a>
+								<br />
+								<a href="https://github.com/">github🐈‍⬛</a>
+								<br />
+							</li>
+						</ul>
+					</div>
+					<hr />
+					<div class="nav_daohan">
+						<script type="text/javascript">
+							var now = new Date();
+							year = now.getFullYear();
+							month = now.getMonth() + 1;
+							date = now.getDate();
+							day = now.getDay();
+							var week = "";
+							switch (day) {
+								case 1:
+									week = "星期一";
+									break;
+								case 2:
+									week = "星期二";
+									break;
+								case 3:
+									week = "星期三";
+									break;
+								case 4:
+									week = "星期四";
+									break;
+								case 5:
+									week = "星期五";
+									break;
+								case 6:
+									week = "星期六";
+									break;
+								default:
+									week = "星期天";
+									break;
+							}
+							document.write("<pre>");
+							document.write("今天是：" + year + "年" + month + "月" + date + "日\b" + week);
+							hours = now.getHours();
+							minutes = now.getMinutes();
+							second = now.getSeconds();
+							document.write("<br/>时间：" + hours + ":" + minutes + ":" + second);
+							document.write("<br>");
+
+							if (hours >= 1 && hours < 5) {
+								document.write("现在已经" + hours + "点了，已经凌晨，快去睡觉吧！");
+							}
+							if (hours >= 5 && hours <= 6) {
+								document.write("现在已经" + hours + "点了，早上好！日出迎接新的一天");
+							}
+							if (hours >= 7 && hours <= 11) {
+								document.write("早上好啊！现在是" + hours + "点，快去吃早餐吧！");
+							}
+							if (hours >= 12 && hours <= 13) {
+								document.write("中午好啊！现在是" + hours + "点");
+							}
+							if (hours >= 14 && hours <= 17) {
+								document.write("下午好啊！现在是" + hours + "点，去喝一杯下午茶吧！");
+							}
+							if (hours >= 18 && hours <= 21) {
+								document.write("晚上好，现在是" + hours + "点");
+							}
+							if (hours >= 22 && hours <= 24) {
+								document.write("晚上好，现在是" + hours + "点，已经深夜了，准备睡觉吧");
+							}
+						</script>
+					</div>
+				</div>
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+						data-bs-toggle="dropdown">
+						快捷访问
+					</button>
+
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li><a class="dropdown-item" href="../index.html">首页</a></li>
+						<li><a class="dropdown-item" href="../contact.html">联系</a></li>
+						<li><a class="dropdown-item" href="../writeblog.html">写博客🛹</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="nav_left">
+			<img src="imges/profile.jpg" />
+			<a href="../index.html">Austin</a>
+
+		</div>
+		<div id="nav">
+
+		</div>
+		<div class="nav_right">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../contact.html">About</a></li>
+				<li><a href="../writeblog.html">写博客🛹</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--博客主页-->
+	<div class="center_blog">
+		<link rel="stylesheet" type="text/css" href="css/index_blog.css"/>
+		<div class="blog_left">
+			<!--样式-->
+			<link rel="stylesheet" type="text/css" href=""/>
+			<!--文章写入-->
+		</div>
+		<div class="blog_right1">
+			<div class="top">
+				<br />
+				<marquee behavior="" direction="left">夕阳无限好，只是近黄昏</marquee>
+			</div>
+			<div class="blog_button">
+				<!--插入图片-->
+			</div>
+		</div>
+		<div class="blog_right2">
+			<div class="right2_right">
+			<img src="imges/profile.jpg"/>
+			<br />
+			<p>烟舟</p>
+			</div>
+				<div class="p-right">
+					<p>发布时间： <span>2022/8/1</span> </p>
+					<br />
+					<p>类型：<span>未分类</span></p>
+				</div>
+		</div>
+	</div>
+	
+	<div class="button">
+    	<br>
+    	<p>广ICP备1008611号-1|<img src="imges/truste.png"></p>
+    	<p>所属权由©️ 2022 lishengzhou™️所有</p>
+    </div>
+</body>
+
+</html>
