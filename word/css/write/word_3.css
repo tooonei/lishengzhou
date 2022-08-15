@@ -1,0 +1,36 @@
+.center_blog{
+	width: max(1400px);
+	height: 700px;
+	margin:10px auto;
+}
+.blog_left{
+	height: 700px;
+}
+.blog_button{
+	background: url(../../imges/file.jpeg);
+	background: cover;
+	width: 390px;
+	height: 300px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.blog_button p{
+	text-align: center;
+	font-size: 30px;
+	font-family: "微软雅黑";
+}
+.blog_left h3{
+	margin-top: 10px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: bolder;
+}
+.p-0{
+	text-align: center;
+	font-size: 16px;
+	color: #999999;
+}
+.p-1 p{
+	text-indent: 2em;
+}
+

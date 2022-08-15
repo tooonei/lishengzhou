@@ -1,0 +1,89 @@
+/*文章1*/
+.word-1{
+	width: max(960px);
+	height: 280px;
+	border-radius: 20px;
+	background: url(../word/imges/file.jpeg);
+	margin: 0 auto;
+	margin-top:20px ;
+	font-size: 48px;
+	color: black;
+	text-align: center;
+	transition: 1s ease;
+}
+.word-1:hover{
+	margin-top: 5px;
+	width: max(970px);
+	height: 290px;
+	box-shadow: 1px 1px 1px 1px;
+	
+}
+.word-1 p{
+	margin-button: 50px;
+}
+#look a{
+	border: 6px solid brown;
+	color: wheat;
+	text-decoration: none;
+}
+/*文章2*/
+.word-2{
+	width: max(960px);
+	height: 280px;
+	border-radius: 20px;
+	background: url(../word/imges/file1.jpeg);
+	margin: 0 auto;
+	margin-top:20px ;
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	transition: 1s ease;
+}
+
+.word-2:hover{
+	margin-top: 5px;
+	width: max(970px);
+	height: 290px;
+	box-shadow: 1px 1px 1px 1px;
+	
+}
+.word-2 p{
+	margin-button: 50px;
+}
+#look a{
+	border: 6px solid brown;
+	color: wheat;
+	text-decoration: none;
+}
+/*文章3*/
+.word-3{
+	width: max(960px);
+	height: 280px;
+	border-radius: 20px;
+	background: url(../word/imges/img5.jpg);
+	margin: 0 auto;
+	margin-top:20px ;
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	transition: 1s ease;
+}
+
+.word-3:hover{
+	margin-top: 5px;
+	width: max(970px);
+	height: 290px;
+	box-shadow: 1px 1px 1px 1px;
+	
+}
+.word-3 p{
+	margin-button: 50px;
+}
+#look a{
+	border: 6px solid brown;
+	color: wheat;
+	text-decoration: none;
+}
+
+
+

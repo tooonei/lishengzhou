@@ -1,0 +1,129 @@
+.contact{
+	width: 1534px;
+}
+.contact .contact_left{
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	float: left;
+}
+.contact_left img {
+	/*opacity: 0.8;*/
+}
+.contact .contact_right{
+	background: white;
+	width:734px;
+	height: 600px;
+	float: left;
+}
+.contact_h3{
+	margin: 40px;
+	height: 50px;
+}
+.contact_right h3{
+	font-weight: bolder;
+	font-size: 40px;
+	font-family:"微软雅黑";
+	animation: massage 3s ease-in-out;
+	background: orange;
+	width: 221px;
+	color: white;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 7px;
+}
+@keyframes massage{
+	0%{
+		background: red;
+		width: 221px;
+		color: white;
+	}
+	25%{
+		background:red ;
+		width: 221px;
+		color: tan;
+		margin-left: 50px;
+		
+	}
+	50%{
+		background:yellow ;
+		width: 221px;
+		color: azure;
+		margin-left: 10px;
+	}
+	75%{
+		background:orange ;
+		width: 221px;
+		color: orchid;
+		margin-right: 70px;
+		margin-top: 20px;
+	}
+	100%{
+		background:orchid ;
+		width: 221px;
+		color:#01A0E4;
+		margin-right:30px;
+	}
+}
+.massage .massage1{
+	margin: 9px;
+	margin-left: 70px;
+	width: 600px;
+	height: 400px;
+	background: rgb(11, 94, 215);
+	border-radius: 10px;
+	animation: massage1 3s ease-in-out;
+}
+@keyframes massage1{
+	0%{
+		background: blueviolet;
+		width: 221px;
+		color: white;
+	}
+	25%{
+		background:orange;
+		width: 221px;
+		color: tan;
+		margin-left: 50px;
+		
+	}
+	50%{
+		background:red ;
+		width: 400px;
+		color: azure;
+		margin-left: 10px;
+		height: 250px;
+	}
+	75%{
+		background:orange ;
+		width: 500px;
+		color: orchid;
+		margin-right: 70px;
+		margin-top: 20px;
+	}
+	90%{
+		background:yellow ;
+		width: 600px;
+		color:#01A0E4;
+		margin-right:30px;
+		height: 350px;
+	}
+	100%{
+		background:rgb(rgb(11, 94, 215)) ;
+		width: 600px;
+		height: 400px;
+		color:#01A0E4;
+		margin-right:30px;
+	}
+}
+     .massage1 p{
+     	font-size: 20px;
+     	text-align: center;
+}
+    .massage1 button{
+    	border: none;
+    	background: red;
+    	border-radius: 10px;
+    }
+
+
+
